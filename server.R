@@ -18,11 +18,10 @@ library(tm)
 source(paste0(getwd(), "/functions_v2.R"))
 
 
-# Define server logic required to draw a histogram
 shinyServer(function(input, output) {
     
     # parameters
-    #############
+    ##########################
     par_sampleRate <- 0.07
     
     # read files
@@ -33,13 +32,12 @@ shinyServer(function(input, output) {
     gram3 <- readRDS(paste0(dir_input, "/gram3_index.rds"))
     gram4 <- readRDS(paste0(dir_input, "/gram4_index.rds"))
     
-    
-    # clean the sentence
-    ####################
     f_nextWord <- reactive({
         
         text_to_pred <- input$i_text
         
+        # clean the text
+        #################################
         if(text_to_pred == "") {
             return(list("",""))
         }
@@ -66,8 +64,8 @@ shinyServer(function(input, output) {
         text_to_pred <- stripWhitespace(text_to_pred)
         
         
-        # prediction
-        ######################
+        # predict next word
+        ###################################
         sentence_token <- unlist(strsplit(text_to_pred, split = " "))
         
         index_token <- dictionary[sentence_token]
@@ -126,12 +124,9 @@ shinyServer(function(input, output) {
         
         return(list(pred_word, algr))
         
-        
     })
    
-    
     output$o_nextWord <- renderText(f_nextWord()[[1]])
     output$o_algorithm <- renderText(f_nextWord()[[2]])
 
-  
 })

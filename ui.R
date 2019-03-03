@@ -17,13 +17,12 @@
 
 library(shiny)
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
   
   # Application title
   titlePanel("Predicting Next Word with N-gram Model"),
   
-  # Sidebar with a slider input for number of bins 
+  # Sidebar  
   sidebarLayout(
     sidebarPanel(
        h3("Introduction"),
@@ -37,7 +36,7 @@ shinyUI(fluidPage(
        submitButton("Submit")
     ),
     
-    # Show a plot of the generated distribution
+    # MainPanel
     mainPanel(
         tabsetPanel(type = "pills", 
                     tabPanel("Prediction", h3("Next word is "),textOutput("o_nextWord")), 
