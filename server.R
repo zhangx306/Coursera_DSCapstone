@@ -1,5 +1,5 @@
 ## Coursera Data Science Capstone
-## UI of shiny app
+## Server of shiny app
 
 ## Instruction
 ##-----------------------------------------------------------
