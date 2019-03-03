@@ -37,7 +37,7 @@ library(quanteda)
 # parameters
 #############
 par_n_gram <- 1         # 1, 2, 3, 4
-par_sampleRate <- 0.01
+par_sampleRate <- 0.07
 par_createSample <- F   # change to T if when want to draw a new sample & par_n_gram <- 1
 
 

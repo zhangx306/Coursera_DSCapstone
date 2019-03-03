@@ -27,7 +27,7 @@ shinyServer(function(input, output) {
     
     # parameters
     #############
-    par_sampleRate <- 0.01
+    par_sampleRate <- 0.07
     
     # read files
     dir_input <- paste0(getwd(), "/data/en_US_grams_sample", par_sampleRate*100)

@@ -24,7 +24,7 @@ source("./functions_v2.R")
 
 # parameters
 #############
-par_sampleRate <- 0.01
+par_sampleRate <- 0.07
 par_sentence <- "i wish you couldd talk about"
 
 # read files
