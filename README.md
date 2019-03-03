@@ -1,5 +1,7 @@
 ## Shiny App
 #### https://zhangx306.shinyapps.io/shiny_ngram/
+## R Rresentation
+#### http://rpubs.com/zhangx306/Coursera_Capstone_PresentationV1
 ## Source Code 
 #### - Coursera_DSCapstone_Part1_GetNGram.R
 ##### Get the indexed N-grams and their counts
