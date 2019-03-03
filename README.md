@@ -1,4 +1,6 @@
-## Coursera_DSCapstone .R Files
+## Shiny App
+#### https://zhangx306.shinyapps.io/shiny_ngram/
+## Source Code 
 ### - Coursera_DSCapstone_Part1_GetNGram.R
 #### Get the indexed N-grams and their counts
 #### Allows customization of % of texts used to generate N-grams and counts
